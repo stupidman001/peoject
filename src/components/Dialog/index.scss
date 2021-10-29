@@ -1,0 +1,40 @@
+@import "@/assets/css/common.scss";
+
+@include b(YUJUN-dialog){
+    z-index: 999;
+    background-color: #fff;
+    @include e(header){
+        padding: 20px 20px 10px;
+        @include m(title){
+          line-height: 24px;
+          font-size: 18px;
+          color: #303133;
+        }
+        @include m(btn){
+           position: absolute;
+           top: 20px;
+           right: 20px;
+           padding: 0;
+           background: transparent;
+           border: none;
+           outline: none;
+           cursor: pointer;
+           font-size: 16px;
+           color:909399
+        }
+    }
+    @include e(body){
+        padding: 30px 20px;
+        color: #606266;
+        font-size: 14px;
+        word-break: break-all;
+    }
+    @include e(footer){
+        padding: 10px 20px 20px;
+        text-align: right;
+        box-sizing: border-box;
+        ::v-deep .one-button:first-child{
+          margin-right: 20px;
+        }
+    }
+}

@@ -1,7 +1,7 @@
 <template>
   <div>
 
-    <Button>按钮组件</Button>
+    <!-- <Button>按钮组件</Button>
     <Button type="primary">按钮组件</Button>
     <Button type="success">按钮组件</Button>
     <Button type="warning">按钮组件</Button>
@@ -30,17 +30,24 @@
     <Button circle></Button>
 
     <Button @click="fun">执行函数</Button>
+
+    <Button icon="leimuguanli" circle></Button> -->
+    
+    <Dialog />
+
   </div>
 </template>
 
 <script>
 // 导入组件
-import Button from '@/components/Button'
+// import Button from '@/components/Button'
+import Dialog from '@/components/Dialog'
 
 export default {
   name: 'App',
   components:{
-    Button
+    // Button,
+    Dialog
   },
   methods:{
     fun(){

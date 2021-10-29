@@ -12,7 +12,6 @@
     <i v-if="icon" :class="`iconfont icon-${icon}`"></i>
     <!-- 按钮的内容 -->
    <span v-if="$slots.default"><slot></slot></span>
-  
   </button>
 </template>
 
