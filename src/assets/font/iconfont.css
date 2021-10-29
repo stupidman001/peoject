@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "YUJUN"; 
+  src: url('iconfont.woff2?t=1635477874475') format('woff2'),
+       url('iconfont.woff?t=1635477874475') format('woff'),
+       url('iconfont.ttf?t=1635477874475') format('truetype');
+}
+
+.iconfont {
+  font-family: "YUJUN" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-huodongyunying:before {
+  content: "\fccb";
+}
+
+.icon-dingdanguanli:before {
+  content: "\fcce";
+}
+
+.icon-caiwuguanli:before {
+  content: "\fccf";
+}
+
+.icon-kefuzhongxin:before {
+  content: "\fcd3";
+}
+
+.icon-leimuguanli:before {
+  content: "\fcd4";
+}
+
+.icon-minganci:before {
+  content: "\fcd5";
+}
+
+.icon-pinpaibaohu:before {
+  content: "\fcd6";
+}
+
+.icon-quanxianguanli:before {
+  content: "\fcd8";
+}
+
+.icon-shangjiaguanli:before {
+  content: "\fcd9";
+}
+
+.icon-shangpinguanli:before {
+  content: "\fcda";
+}
+
+.icon-shenheguanli:before {
+  content: "\fcdb";
+}
+
+.icon-shoucangguanli:before {
+  content: "\fcdc";
+}
+
+.icon-shujuguanli:before {
+  content: "\fcdd";
+}
+
+.icon-shujutongji:before {
+  content: "\fcde";
+}
+
+.icon-tongjiguanli:before {
+  content: "\fcdf";
+}
+
+.icon-tupianguanli:before {
+  content: "\fce0";
+}
+
+.icon-yonghuguanli:before {
+  content: "\fce2";
+}
+
+.icon-yonghuquanxian:before {
+  content: "\fce3";
+}
+
+.icon-zhanghuxinxi:before {
+  content: "\fce4";
+}

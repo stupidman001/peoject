@@ -1,0 +1,142 @@
+{
+  "id": "2901304",
+  "name": "com",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "25001852",
+      "name": "活动运营",
+      "font_class": "huodongyunying",
+      "unicode": "fccb",
+      "unicode_decimal": 64715
+    },
+    {
+      "icon_id": "25001895",
+      "name": "订单管理",
+      "font_class": "dingdanguanli",
+      "unicode": "fcce",
+      "unicode_decimal": 64718
+    },
+    {
+      "icon_id": "25001905",
+      "name": "财务管理",
+      "font_class": "caiwuguanli",
+      "unicode": "fccf",
+      "unicode_decimal": 64719
+    },
+    {
+      "icon_id": "25001976",
+      "name": "客服中心",
+      "font_class": "kefuzhongxin",
+      "unicode": "fcd3",
+      "unicode_decimal": 64723
+    },
+    {
+      "icon_id": "25001979",
+      "name": "类目管理",
+      "font_class": "leimuguanli",
+      "unicode": "fcd4",
+      "unicode_decimal": 64724
+    },
+    {
+      "icon_id": "25002002",
+      "name": "敏感词",
+      "font_class": "minganci",
+      "unicode": "fcd5",
+      "unicode_decimal": 64725
+    },
+    {
+      "icon_id": "25002004",
+      "name": "品牌保护",
+      "font_class": "pinpaibaohu",
+      "unicode": "fcd6",
+      "unicode_decimal": 64726
+    },
+    {
+      "icon_id": "25002060",
+      "name": "权限管理",
+      "font_class": "quanxianguanli",
+      "unicode": "fcd8",
+      "unicode_decimal": 64728
+    },
+    {
+      "icon_id": "25002065",
+      "name": "商家管理",
+      "font_class": "shangjiaguanli",
+      "unicode": "fcd9",
+      "unicode_decimal": 64729
+    },
+    {
+      "icon_id": "25002096",
+      "name": "商品管理",
+      "font_class": "shangpinguanli",
+      "unicode": "fcda",
+      "unicode_decimal": 64730
+    },
+    {
+      "icon_id": "25002099",
+      "name": "审核管理",
+      "font_class": "shenheguanli",
+      "unicode": "fcdb",
+      "unicode_decimal": 64731
+    },
+    {
+      "icon_id": "25002825",
+      "name": "收藏管理",
+      "font_class": "shoucangguanli",
+      "unicode": "fcdc",
+      "unicode_decimal": 64732
+    },
+    {
+      "icon_id": "25002827",
+      "name": "数据管理",
+      "font_class": "shujuguanli",
+      "unicode": "fcdd",
+      "unicode_decimal": 64733
+    },
+    {
+      "icon_id": "25002828",
+      "name": "数据统计",
+      "font_class": "shujutongji",
+      "unicode": "fcde",
+      "unicode_decimal": 64734
+    },
+    {
+      "icon_id": "25002834",
+      "name": "统计管理",
+      "font_class": "tongjiguanli",
+      "unicode": "fcdf",
+      "unicode_decimal": 64735
+    },
+    {
+      "icon_id": "25002835",
+      "name": "图片管理",
+      "font_class": "tupianguanli",
+      "unicode": "fce0",
+      "unicode_decimal": 64736
+    },
+    {
+      "icon_id": "25002863",
+      "name": "用户管理",
+      "font_class": "yonghuguanli",
+      "unicode": "fce2",
+      "unicode_decimal": 64738
+    },
+    {
+      "icon_id": "25002866",
+      "name": "用户权限",
+      "font_class": "yonghuquanxian",
+      "unicode": "fce3",
+      "unicode_decimal": 64739
+    },
+    {
+      "icon_id": "25002870",
+      "name": "账户信息",
+      "font_class": "zhanghuxinxi",
+      "unicode": "fce4",
+      "unicode_decimal": 64740
+    }
+  ]
+}

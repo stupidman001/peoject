@@ -1,7 +1,19 @@
 <template>
-    <button class="YUJUN-button">
-      按钮组件
-    </button>
+  <button
+    class="YUJUN-button"
+    :class="[
+    `YUJUN-button__${type}`, 
+    { 'isplain': plain ,
+      'isround': round ,
+      'iscircle': circle }
+    ]"
+    @click="handleClick"
+  >
+    <i v-if="icon" :class="`iconfont icon-${icon}`"></i>
+    <!-- 按钮的内容 -->
+   <span v-if="$slots.default"><slot></slot></span>
+  
+  </button>
 </template>
 
 <script>
@@ -10,7 +22,7 @@ export default {
   props: {
     type: {
       type: String,
-      default: "default",
+      default: '',
     },
     plain: {
       type: Boolean,
@@ -29,51 +41,30 @@ export default {
       default: false,
     },
     icon: {
-      type: Boolean,
+      type: String,
+      default:''
     },
   },
   created() {
     console.log(
-      this.type,
-      this.plain,
-      this.round,
-      this.circle,
-      this.disabled,
       this.icon
     );
   },
+  data() {
+    return {
+      num: 123,
+    };
+  },
+  methods:{
+    handleClick(){
+      this.$emit('click')
+    }
+  }
 };
 </script>
 
+<style src="@/assets/font/iconfont.css">
+</style>
 <style lang="scss">
-@include b(YUJUN-button) {
-  display: inline-block;
-  line-height: 1;
-  white-space: nowrap;
-  cursor: pointer;
-  background: #ffffff;
-  border: 1px solid #dcdfe6;
-  color: #606266;
-  -webkit-appearance: none;
-  text-align: center;
-  box-sizing: border-box;
-  outline: none;
-  margin: 0;
-  transition: 0.1s;
-  font-weight: 500;
-  //禁止元素的文字被选中
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  padding: 12px 20px;
-  font-size: 14px;
-  border-radius: 4px;
-  &:hover,
-  &:hover {
-    color: #409eff;
-    border-color: #c6e2ff;
-    background-color: #ecf5ff;
-  }
-}
+@import './Button.scss';
 </style>
