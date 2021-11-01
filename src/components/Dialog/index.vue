@@ -1,5 +1,5 @@
 <template>
-  <div class="YUJUN-dialog">
+  <div class="YUJUN-dialog" :style="{width:width,marginTop:top}">
     <div class="YUJUN-dialog__header">
       <!-- 标题 -->
       <slot name="title">
@@ -12,25 +12,30 @@
     </div>
     <!-- 主要内容 -->
     <div class="YUJUN-dialog__body">
-      <span>这是一段信息</span>
+      <slot></slot>
     </div>
     <!-- 底部操作按钮 -->
-    <div class="YUJUN-dialog__footer">
-      <Button class="YUJUN-dialog__footer--cancel">取消</Button>
-      <Button type="primary" class="YUJUN-dialog__footer--confirm">确定</Button>
+    <div class="YUJUN-dialog__footer" v-if="$slots.footer">
+      <!-- 如果footer不传递内容，则不显示footer -->
+       <slot name="footer"></slot>
     </div>
   </div>
 </template>
 
 <script>
-import Button from "@/components/Button/index.vue";
+console.log(this)
 export default {
   name: "YUJUN-dialog",
-  components: {
-    Button,
-  },
   props:{
       title:{
+        type:String,
+        default:''
+      },
+      width:{
+        type:String,
+        default:''
+      },
+      top:{
         type:String,
         default:''
       }
@@ -39,5 +44,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "./index.scss";
+  @import "./index.scss";
 </style>

@@ -20,6 +20,7 @@
         // 指定了怎样在单词内断行。
         word-break: break-all;
     }
+
     @include e(footer){
         padding: 10px 20px 20px;
         text-align: right;
@@ -28,4 +29,5 @@
           margin-left:10px;
         }
     }
+
 }

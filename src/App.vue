@@ -32,25 +32,34 @@
 
     <Button icon="leimuguanli" circle></Button> -->
     
-    <Dialog title="提示!!!">
-      <!-- 使用v-slot指定插槽进行编辑 -->
-        <template v-slot:title>
+    <!-- 标题 -->
+    <!-- <Dialog title="提示!!!">
+        <template slot="title">
           <h3 style="color:red">我是标题</h3>
         </template>
+    </Dialog> -->
+
+    <!-- 宽度和位置 -->
+    <Dialog title="提示!!!" width="80%" top="100px">
+      弹窗提示!!!
+      <template slot="footer">
+        <Button>取消</Button>
+        <Button>确定</Button>
+      </template>
     </Dialog>
-    
+
   </div>
 </template>
 
 <script>
 // 导入组件
-// import Button from '@/components/Button'
+import Button from '@/components/Button'
 import Dialog from '@/components/Dialog'
 
 export default {
   name: 'App',
   components:{
-    // Button,
+    Button,
     Dialog
   },
   methods:{
