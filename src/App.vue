@@ -40,7 +40,7 @@
     </Dialog> -->
 
     <!-- 宽度和位置 -->
-    <Dialog
+    <!-- <Dialog
      title="提示!!!"
      width="80%" 
      top="100px"
@@ -51,25 +51,23 @@
         <Button>取消</Button>
         <Button>确定</Button>
       </template>
-    </Dialog>
+    </Dialog> -->
+
   </div>
 </template>
 
 <script>
 // 导入组件
-import Button from "@/components/Button";
-import Dialog from "@/components/Dialog";
+// import Button from "@/components/Button";
+// import Dialog from "@/components/Dialog";
+
 
 export default {
   name: "App",
   components: {
-    Button,
-    Dialog,
-  },
-  data(){
-    return {
-      visible:true
-    }
+    // Button,
+    // Dialog,
+    
   }
 };
 </script>
