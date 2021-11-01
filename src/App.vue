@@ -1,6 +1,5 @@
 <template>
   <div>
-
     <!-- <Button>按钮组件</Button>
     <Button type="primary">按钮组件</Button>
     <Button type="success">按钮组件</Button>
@@ -33,8 +32,13 @@
 
     <Button icon="leimuguanli" circle></Button> -->
     
-    <Dialog />
-
+    <Dialog title="提示!!!">
+      <!-- 使用v-slot指定插槽进行编辑 -->
+        <template v-slot:title>
+          <h3 style="color:red">我是标题</h3>
+        </template>
+    </Dialog>
+    
   </div>
 </template>
 
