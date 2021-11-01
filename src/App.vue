@@ -53,6 +53,8 @@
       </template>
     </Dialog> -->
 
+    <Input v-model="value"/>
+
   </div>
 </template>
 
@@ -60,6 +62,7 @@
 // 导入组件
 // import Button from "@/components/Button";
 // import Dialog from "@/components/Dialog";
+import Input from "@/components/Input"
 
 
 export default {
@@ -67,7 +70,12 @@ export default {
   components: {
     // Button,
     // Dialog,
-    
+    Input
+  },
+  data(){
+    return {
+      value:"12321"
+    }
   }
 };
 </script>

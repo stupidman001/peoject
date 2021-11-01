@@ -1,0 +1,31 @@
+@import "@/assets/css/common.scss";
+
+@include b(YUJUN-input){
+    width: 100%;
+    position: relative;
+    font-size: 16px;
+    display: inline-block;
+
+    @include e(inner){
+        background-color: #fff;
+        border-radius: 4px;
+        width: 100%;
+        outline: none;
+        padding: 0 15px;
+        height: 40px;
+        line-height: 40px;
+
+        &:focus{
+            outline: none;
+            border-color: #409eff;  
+        }
+
+        // input禁用样式
+        &.is-disabled{
+            background-color: #f5f7fa;
+            border-color: #e4e7ed;
+            color: #c0c4cc;
+            cursor:not-allowed;
+        }
+    }
+}
