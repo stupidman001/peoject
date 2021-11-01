@@ -31,7 +31,7 @@
     <Button @click="fun">执行函数</Button>
 
     <Button icon="leimuguanli" circle></Button> -->
-    
+
     <!-- 标题 -->
     <!-- <Dialog title="提示!!!">
         <template slot="title">
@@ -40,34 +40,38 @@
     </Dialog> -->
 
     <!-- 宽度和位置 -->
-    <Dialog title="提示!!!" width="80%" top="100px">
+    <Dialog
+     title="提示!!!"
+     width="80%" 
+     top="100px"
+     :visible.sync="visible"
+    >
       弹窗提示!!!
       <template slot="footer">
         <Button>取消</Button>
         <Button>确定</Button>
       </template>
     </Dialog>
-
   </div>
 </template>
 
 <script>
 // 导入组件
-import Button from '@/components/Button'
-import Dialog from '@/components/Dialog'
+import Button from "@/components/Button";
+import Dialog from "@/components/Dialog";
 
 export default {
-  name: 'App',
-  components:{
+  name: "App",
+  components: {
     Button,
-    Dialog
+    Dialog,
   },
-  methods:{
-    fun(){
-      console.log('函数执行了')
+  data(){
+    return {
+      visible:true
     }
   }
-}
+};
 </script>
 
 <style lang="scss">
