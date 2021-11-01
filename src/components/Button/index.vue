@@ -64,6 +64,6 @@ export default {
 
 <style src="@/assets/font/iconfont.css">
 </style>
-<style lang="scss">
+<style lang="scss" scoped>
 @import './Button.scss';
 </style>

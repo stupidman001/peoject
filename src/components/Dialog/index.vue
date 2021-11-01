@@ -15,8 +15,8 @@
     </div>
     <!-- 底部操作按钮 -->
     <div class="YUJUN-dialog__footer">
-      <Button>取消</Button>
-      <Button type="primary">确定</Button>
+      <Button class="YUJUN-dialog__footer--cancel">取消</Button>
+      <Button type="primary" class="YUJUN-dialog__footer--confirm">确定</Button>
     </div>
   </div>
 
@@ -32,6 +32,6 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "./index.scss";
 </style>
