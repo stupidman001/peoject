@@ -53,7 +53,9 @@
       </template>
     </Dialog> -->
 
-    <Input v-model="value"/>
+    <Input v-model="username" clearable showPassword />
+
+    <Input v-model="username" clearable showPassword type="password" />
 
   </div>
 </template>
@@ -64,7 +66,6 @@
 // import Dialog from "@/components/Dialog";
 import Input from "@/components/Input"
 
-
 export default {
   name: "App",
   components: {
@@ -74,8 +75,11 @@ export default {
   },
   data(){
     return {
-      value:"12321"
+      username:"用户名称"
     }
+  },
+  methods:{
+    
   }
 };
 </script>
