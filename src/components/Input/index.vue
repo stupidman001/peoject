@@ -1,6 +1,5 @@
 <template>
   <div class="YUJUN-input">
-    
     <input
       class="YUJUN-input__inner"
       :class="{ 'is-disabled': disabled }"
@@ -11,13 +10,11 @@
       :value="value"
       @input="handleInput"
     />
-
     <!-- 清除按钮、显示密码 按钮 -->
     <span>
       <i v-if="clearable && value" @click="clear">清除</i>
       <i v-if="showPassword && type == 'password'" @click="handlePassword">显示</i>
     </span>
-
   </div>
 </template>
 

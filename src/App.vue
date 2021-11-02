@@ -53,9 +53,14 @@
       </template>
     </Dialog> -->
 
+    <!-- 
     <Input v-model="username" clearable showPassword />
-
     <Input v-model="username" clearable showPassword type="password" />
+     -->
+
+    <!-- <Switch /> -->
+
+    <YUJUNSwitch />
 
   </div>
 </template>
@@ -64,14 +69,16 @@
 // 导入组件
 // import Button from "@/components/Button";
 // import Dialog from "@/components/Dialog";
-import Input from "@/components/Input"
+// import Input from "@/components/Input"
+import YUJUNSwitch from "@/components/Switch"
 
 export default {
   name: "App",
   components: {
     // Button,
     // Dialog,
-    Input
+    // Input
+    YUJUNSwitch
   },
   data(){
     return {
