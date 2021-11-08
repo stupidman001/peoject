@@ -35,3 +35,23 @@
         
     }
 }
+
+// 选中样式
+.is-checked {
+    .YUJUN-switch__core{
+      border-color: #409eff;
+      background-color: #409eff;
+      .YUJUN-switch__core--button {
+        transform: translateX(20px);
+      }
+    }
+  }
+  
+// 隐藏input标签
+.YUJUN-switch_input{
+  position:absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  margin: 0;
+}

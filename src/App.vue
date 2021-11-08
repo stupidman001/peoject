@@ -58,10 +58,8 @@
     <Input v-model="username" clearable showPassword type="password" />
      -->
 
-    <!-- <Switch /> -->
-
-    <YUJUNSwitch />
-
+    <YUJUNSwitch v-model="active" active-color="#13ce66" inactive-color="#ff4949" name="apple" />
+    <!-- <YUJUNSwitch @input="fun" :value="active" /> -->
   </div>
 </template>
 
@@ -82,11 +80,9 @@ export default {
   },
   data(){
     return {
-      username:"用户名称"
+      username:"用户名称",
+      active:true
     }
-  },
-  methods:{
-    
   }
 };
 </script>
