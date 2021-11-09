@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- <Button>xia</Button> -->
     <!-- <Button>按钮组件</Button>
     <Button type="primary">按钮组件</Button>
     <Button type="success">按钮组件</Button>
@@ -64,9 +65,23 @@
      <!-- <Radio v-model="gender" label="0">男</Radio> -->
      <!-- <Radio v-model="gender" label="1">女</Radio> -->
 
-     <Radio @input="label => gender = label" :value="gender" label="1">女</Radio>
-     <br>
-     <Radio @input="label => gender = label" :value="gender" label="0">男</Radio>
+     <!-- <Radio @input="label => gender = label" :value="gender" label="1">女</Radio> -->
+     <!-- <br> -->
+     <!-- <Radio @input="label => gender = label" :value="gender" label="0">男</Radio> -->
+  
+      <!-- <Com>
+        <template v-slot:header>
+          <div>头部</div>
+        </template>
+        <template v-slot:body>
+          <p>内容</p>
+        </template>
+        <template v-slot:footer>
+          <a>底部</a>
+        </template>
+        <i>其他内容</i>
+      </Com> -->
+    <!-- <Button>点击</Button> -->
   </div>
 </template>
 
@@ -76,16 +91,18 @@
 // import Dialog from "@/components/Dialog";
 // import Input from "@/components/Input"
 // import YUJUNSwitch from "@/components/Switch"
-import Radio from "@/components/Radio"
+// import Radio from "@/components/Radio"
+// import Com from "@/components/Com"
 
 export default {
   name: "App",
   components: {
-    Radio
+    // Radio
     // Button,
     // Dialog,
     // Input
     // YUJUNSwitch
+    // Com
   },
   data(){
     return {

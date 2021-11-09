@@ -13,3 +13,22 @@ icon	        图标类名	                                       string	 无
 
 事件名	         事件描述
 click	        点击事件
+
+
+父组件使用 Button 绑定了 @click 事件,子组件需要在点击 button 的时候，出发click事件
+
+$slots是一个插槽用来预留位置，default则是指除了具名插槽以外的所有内容
+
+
+
+
+
+
+
+
+
+
+
+
+
+

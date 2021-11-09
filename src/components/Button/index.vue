@@ -2,16 +2,14 @@
   <button
     class="YUJUN-button"
     :class="[
-    `YUJUN-button__${type}`, 
-    { 'isplain': plain ,
-      'isround': round ,
-      'iscircle': circle }
+      `YUJUN-button__${type}`,
+      { isplain: plain, isround: round, iscircle: circle },
     ]"
     @click="handleClick"
   >
     <i v-if="icon" :class="`iconfont icon-${icon}`"></i>
     <!-- 按钮的内容 -->
-   <span v-if="$slots.default"><slot></slot></span>
+    <span v-if="$slots.default"><slot></slot></span>
   </button>
 </template>
 
@@ -21,7 +19,7 @@ export default {
   props: {
     type: {
       type: String,
-      default: '',
+      default: "",
     },
     plain: {
       type: Boolean,
@@ -41,29 +39,22 @@ export default {
     },
     icon: {
       type: String,
-      default:''
+      default: "",
     },
   },
-  created() {
-    console.log(
-      this.icon
-    );
+  created(){
+    console.log(this)
   },
-  data() {
-    return {
-      num: 123,
-    };
+  methods: {
+    handleClick() {
+      this.$emit("click");
+    },
   },
-  methods:{
-    handleClick(){
-      this.$emit('click')
-    }
-  }
 };
 </script>
 
 <style src="@/assets/font/iconfont.css">
 </style>
 <style lang="scss" scoped>
-@import './Button.scss';
+@import "./Button.scss";
 </style>
