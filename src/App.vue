@@ -62,13 +62,11 @@
     <!-- <YUJUNSwitch @input="fun" :value="active" /> -->
 
      <!-- <Radio v-model="gender" label="0">男</Radio> -->
-     <br>
      <!-- <Radio v-model="gender" label="1">女</Radio> -->
-     <br>
+
      <Radio @input="label => gender = label" :value="gender" label="1">女</Radio>
      <br>
      <Radio @input="label => gender = label" :value="gender" label="0">男</Radio>
-
   </div>
 </template>
 
@@ -91,9 +89,10 @@ export default {
   },
   data(){
     return {
-      gender: '1'
+      gender: '1',
       // username:"用户名称",
       // active:true
+      number:1
     }
   }
 };
