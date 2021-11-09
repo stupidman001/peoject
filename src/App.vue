@@ -58,8 +58,17 @@
     <Input v-model="username" clearable showPassword type="password" />
      -->
 
-    <YUJUNSwitch v-model="active" active-color="#13ce66" inactive-color="#ff4949" name="apple" />
+    <!-- <YUJUNSwitch v-model="active" active-color="#13ce66" inactive-color="#ff4949" name="apple" /> -->
     <!-- <YUJUNSwitch @input="fun" :value="active" /> -->
+
+     <!-- <Radio v-model="gender" label="0">男</Radio> -->
+     <br>
+     <!-- <Radio v-model="gender" label="1">女</Radio> -->
+     <br>
+     <Radio @input="label => gender = label" :value="gender" label="1">女</Radio>
+     <br>
+     <Radio @input="label => gender = label" :value="gender" label="0">男</Radio>
+
   </div>
 </template>
 
@@ -68,20 +77,23 @@
 // import Button from "@/components/Button";
 // import Dialog from "@/components/Dialog";
 // import Input from "@/components/Input"
-import YUJUNSwitch from "@/components/Switch"
+// import YUJUNSwitch from "@/components/Switch"
+import Radio from "@/components/Radio"
 
 export default {
   name: "App",
   components: {
+    Radio
     // Button,
     // Dialog,
     // Input
-    YUJUNSwitch
+    // YUJUNSwitch
   },
   data(){
     return {
-      username:"用户名称",
-      active:true
+      gender: '1'
+      // username:"用户名称",
+      // active:true
     }
   }
 };
